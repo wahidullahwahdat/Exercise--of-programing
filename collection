@@ -1,0 +1,454 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package collection;
+
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Stack;
+import java.util.Vector;
+import javafx.beans.binding.Bindings;
+import static jdk.nashorn.internal.objects.NativeString.search;
+
+/**
+ *
+ * @author Wahidullah wahdat
+ */
+public class Collection {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        
+         /* we can add by data to array list
+        ArrayList <String>obj =new ArrayList<String>(); 
+        obj.add("wahidullah");
+        obj.add("Mohmmad server");
+        obj.add("obid");
+        obj.add("obid");
+        System.out.println(obj);*/
+        /*
+        Add all funcation
+         ArrayList <String>list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         ArrayList list2=new ArrayList();
+         list2.add("cable");
+         list2.add("screen");
+         list1.addAll(list2);
+         Iterator it= list1.iterator();
+         while (it.hasNext()){
+             System.out.println(it.next());
+         }
+        */
+        /*
+           size of list funcatio
+         ArrayList <String>list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         System.out.println(list1.size());
+        */
+        /*
+        Remove object than list
+         ArrayList<String> list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         System.out.println(list1.remove("computer"));
+         System.out.println(list1);*/
+        /*
+        delete spcific index
+         ArrayList<String> list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         System.out.println(list1.remove(3));
+         System.out.println(list1);*/
+        /*
+        delete all object of list2
+             
+         ArrayList <String>list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         ArrayList <String>list2=new ArrayList<String>();
+         list2.add("cable");
+         list2.add("screen");
+         list1.removeAll(list2);
+         Iterator it= list1.iterator();
+         while (it.hasNext()){
+             System.out.println(it.next());
+         }
+        */
+        /*
+         ArrayList <String>list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         System.out.println(list1.set(3, "Mobil"));
+         System.out.println(list1); */
+        /*
+        contans is true not is false
+         ArrayList <String>list1=new ArrayList<String>();
+         list1.add("computer");
+         list1.add("mouse");
+         list1.add("keybord");
+         list1.add("cpu");
+         System.out.println(list1.contains("computer"));
+         System.out.println(list1);*/
+      /*  linked list part*/
+        /* linked list add
+        LinkedList<String> linklits=new LinkedList<String>();
+        linklits.add("car");
+        linklits.add("Hondi");
+        linklits.add("corolla");
+        linklits.add("full dar");
+        System.out.println(linklits);*/
+        /*
+        add first
+        LinkedList<String> linklits=new LinkedList<String>();
+        linklits.addFirst("car");
+        linklits.add("Hondi");
+        linklits.add("corolla");
+        linklits.addFirst("car");
+        linklits.addFirst("car");
+        linklits.addFirst("car");
+        linklits.addFirst("car");
+        linklits.addFirst("car");
+        linklits.addFirst(("car"));
+        System.out.println(linklits);*/
+        /* add last
+         LinkedList <String>linklist=new LinkedList<String>();
+         linklist.addLast("likozer");
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.addFirst("dodi");
+         linklist.addFirst("mazdi");
+         linklist.addFirst("car");
+        linklist.addlast("bus");
+        System.out.println("linklist");
+        */
+        /*
+        remove object
+         LinkedList<String> linklist=new LinkedList<String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("Hondi");
+         linklist.add("car");
+         linklist.remove("car");
+         System.out.println(linklist);*/
+        /*
+        remove spcific index
+         LinkedList <String>linklist=new LinkedList<String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("bycicle");
+         linklist.add("car");
+         linklist.remove(0);
+         System.out.println(linklist);*/
+        /*
+        remove first object
+         LinkedList<String> linklist=new LinkedList<String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("bycicle");
+         linklist.add("car");
+         linklist.removeFirst();
+         System.out.println(linklist);*/
+        /*
+        remove last object
+         LinkedList<String> linklist=new LinkedList <String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("bycicle");
+         linklist.add("car");
+         linklist.removeLast();
+         System.out.println(linklist);*/
+        /*
+        remove spcific index
+          LinkedList<String> linklist=new LinkedList <String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("bycicle");
+         linklist.add("car");
+         linklist.remove(2);
+         System.out.println(linklist);*/
+        /*
+        set object in spcefic index
+           LinkedList<String> linklist=new LinkedList <String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("bycicle");
+         linklist.add("car");
+         linklist.set(3, "trin");
+         System.out.println(linklist);*/
+        /*
+        size of linklist
+               LinkedList <String>linklist=new LinkedList <String>();
+         linklist.add("Hondi");
+         linklist.add("corolla");
+         linklist.add("bycicle");
+         linklist.add("car");
+         System.out.println(  linklist.size());*/
+        /*Part of stak*/
+        /* add data
+        Stack<String> s=new Stack<String>();
+        s.push("java");
+        s.push("web");
+        s.push("pyton");
+        s.push("software");
+        System.out.println(s);*/
+        /* pop funcation is remove last data
+           Stack s=new Stack();
+        s.push("java");
+        s.push("web");
+        s.push("pyton");
+        s.push("software");
+        s.pop();
+        System.out.println(s);*/
+        /* peek funcation is show first data in stack
+        Stack s=new Stack();
+        s.push("java");
+        s.push("web");
+        s.push("pyton");
+        s.push("software");
+        System.out.println( s.peek());*/
+        /* empty funcation
+          Stack s=new Stack();
+          
+        s.push("java");
+        s.push("web");
+        s.push("pyton");
+        s.push("software");
+        if(s.empty()){
+            System.out.println("stack  is empty");
+        }
+        else{
+            System.out.println("stack is full");
+        }*/
+        
+        
+        
+        /* search funcation 
+        Stack s=new Stack(); 
+        s.push("java");
+        s.push("web");
+        s.push("pyton");
+        s.push("software");
+        if(s.search("d")!=-1){
+             System.out.println("data is  foundad");
+        } else {
+            System.out.println(" your data is not found ");
+           
+        }
+        */
+        /*
+        add function
+    PriorityQueue<String> qlist=new PriorityQueue <String>() ; 
+        qlist.add("wahidullah");
+        qlist.add("omer");
+        qlist.add("simim");
+        qlist.add("address");
+        System.out.println(qlist);*/ 
+        /* remove function
+        PriorityQueue<String> qlist=new PriorityQueue <String>() ; 
+        qlist.add("wahidullah");
+        qlist.add("omer");
+        qlist.add("simim");
+        qlist.add("address");
+        qlist.remove();
+        System.out.println(qlist);*/
+       /* poll function 
+          PriorityQueue<String> qlist=new PriorityQueue <String>() ; 
+        qlist.add("wahidullah");
+        qlist.add("omer");
+        qlist.add("simim");
+        qlist.add("address");
+        qlist.poll();
+        System.out.println(qlist);*/
+        /*
+       
+       
+       /* funcation peek
+        PriorityQueue<String> qlist=new PriorityQueue <String>() ; 
+        qlist.add("wahidullah");
+        qlist.add("omer");
+        qlist.add("simim");
+        qlist.add("address");
+        System.out.println(qlist.peek());*/
+        /* element funcation
+        
+               PriorityQueue<String> qlist=new PriorityQueue <String>() ; 
+        qlist.add("wahidullah");
+        qlist.add("omer");
+        qlist.add("simim");
+        qlist.add("address");
+        System.out.println(qlist.element());*/
+        /*
+       Deque <String> Dlist=new ArrayDeque<String>();
+       Dlist.add("computer scince");
+       Dlist.add("Engeneery");
+       Dlist.add("Econimic");
+       Dlist.add("Ariculture");
+       System.out.println(Dlist);*/
+        /*
+         Deque <String> Dlist=new ArrayDeque<String>();
+       Dlist.add("computer scince");
+       Dlist.add("Engeneery");
+       Dlist.add("Econimic");
+       Dlist.add("Ariculture");
+       System.out.println(Dlist);
+       if(Dlist.isEmpty()){
+           System.out.println("Deque is empty ");
+       }
+       else{
+           System.out.println("Deque is full");
+       }
+                */
+        /*
+       Deque <String> Dlist=new ArrayDeque<String>();
+       Dlist.add("computer scince");
+       Dlist.add("Engeneery");
+       Dlist.add("Econimic");
+       Dlist.add("Ariculture");
+       Dlist.remove();
+       System.out.println(Dlist);*/
+        /*funcation offer
+            Deque <String> Dlist=new ArrayDeque<String>();
+       Dlist.add("computer scince");
+       Dlist.add("Engeneery");
+       Dlist.add("Econimic");
+       Dlist.add("Ariculture");
+       Dlist.offer("adminstretion");
+       System.out.println(Dlist);*/
+        /* vector add 
+        Vector <String> vector=new Vector <String>();
+        vector.add("pen");
+        vector.add("pencil");
+        vector.add("ruller");
+        vector.add("bak");
+        Enumeration obj=vector.elements();
+        while(obj.hasMoreElements()){
+            System.out.println(obj.nextElement());
+        }
+        */
+        /*set*/
+        /*Set add funcation
+        HashSet <String> set=new HashSet<String>();
+        set.add("apple");
+        set.add("orange");
+        set.add("lemov");
+        set.add("Banann");
+        set.add("Banann");
+        System.out.println(set);*/
+        /* clear funcation
+         HashSet <String> set=new HashSet<String>();
+        set.add("apple");
+        set.add("orange");
+        set.add("lemov");
+        set.add("Banann");
+        set.add("Banann");
+        set.clear();;
+        System.out.println(set);
+        */
+        /* contains funcation
+            HashSet <String> set=new HashSet<String>();
+        set.add("apple");
+        set.add("orange");
+        set.add("lemov");
+        set.add("Banann");
+        set.add("Banann");
+        System.out.println(set.contains("apple"));
+                */
+        /* isempty funcation
+            HashSet <String> set=new HashSet<String>();
+        set.add("apple");
+        set.add("orange");
+        set.add("lemov");
+        set.add("Banann");
+        set.add("Banann");
+        if(set.isEmpty()){
+          System.out.println("The Hasset is empty");
+        }
+        else{
+            System.out.println("the Hasset is full");
+        }
+          */
+        /* remove funcation
+        
+             HashSet <String> set=new HashSet<String>();
+        set.add("apple");
+        set.add("orange");
+        set.add("lemov");
+        set.add("Banann");
+        set.add("Banann");
+        set.remove("apple");
+        System.out.println(set);*/
+        /* size funcation
+                HashSet <String> set=new HashSet<String>();
+        set.add("apple");
+        set.add("orange");
+        set.add("lemov");
+        set.add("Banann");
+        set.add("Banann");
+        System.out.println(set.size());
+                */
+       /* Map*/
+ /*put funcation
+  
+  HashMap<Integer,String> hm=new HashMap<Integer,String>();  
+  hm.put(100,"Amit");  
+  hm.put(101,"Vijay");  
+  hm.put(102,"Rahul");  
+  for(Map.Entry m:hm.entrySet()){  
+   System.out.println(m.getKey()+" "+m.getValue());  
+    
+ } 
+}  */
+        /* remove funcation
+    HashMap<Integer, String> obj = new HashMap<Integer, String>();           
+   obj.put(101,"Let us C");  
+   obj.put(102, "Operating System");  
+   obj.put(103, "Data Communication and Networking");  
+   System.out.println("Values before remove: "+ obj);    
+   
+   obj.remove(102);  
+   System.out.println("Values after remove: "+ obj);  */
+         
+  
+ 
+        
+        
+        
+     
+        
+        
+       
+        
+       
+        
+        
+    }
+    
+}
