@@ -1,0 +1,81 @@
+
+package basic;
+/* Object-Oriented Programming is a paradigm that provides many concepts  such
+as inheritance, data binding, polymorphism, etc.
+
+/**
+ *first week
+ * @author Wahidullah wahdat
+ */
+class array{  
+int a[]=new int[5]; 
+a[0]=10; 
+a[1]=20;  
+a[2]=70;  
+a[3]=40;  
+a[4]=50;  
+
+for(int i=0;i<a.length;i++){
+    
+
+System.out.println(a[i]); 
+}
+}
+
+ 
+    
+
+
+
+class A{
+    int a=20;
+    int b=30;
+    int c=a+b;
+    
+    A(){
+        System.out.println("This is a constrector ");
+    }
+}
+public class Basic {
+       String s="wahidullah"; //immutable
+  
+    
+    static  int x=10;
+    public static void main(String[] args) {
+      
+        
+          A obj=new A();
+         
+          
+          System.out.println( personinfo(2,"wahidullah"));
+        System.out.println("my result is ="+obj.c);
+        System.out.println("This a static varible="+x);
+        System.out.println("This is a static mothod ="+multiplication());
+        Basic obj1=new Basic();
+        obj1.info(12, "wahidullah");
+    }
+    static int  multiplication(){
+        int x=10;
+        int y=20;
+        int z=x*y;
+        return z;
+        
+    }
+    private String name;
+    private int age;
+    //public private defult protected
+     String info(int id ,String name){
+        
+         System.out.println("name is =   "+name+"id is =" +id);
+        return name;
+        
+    }
+     void personinfo(int age,String name){
+         this.name=name;
+         this.age=age;
+         System.out.println("my name is= "+name+"my age is="+age);
+     }
+     
+    
+}
+
