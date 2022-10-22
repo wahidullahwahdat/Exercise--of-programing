@@ -1,0 +1,125 @@
+
+package scond.week;
+
+import java.math.BigInteger;
+
+/**
+ *
+ * @author Wahidullah wahdat
+ */
+public class ScondWeek {
+    int a=54;
+    int b=32;
+   
+     
+
+   
+    public static void main(String[] args) {
+        //  B obj=new B();
+        //  obj.run();
+        /*Encp obj=new Encp();
+        System.out.println("your id ="+obj.gitId()); 
+        System.out.println("your name="+obj.gitName());
+        Encp obj1=new Encp();
+        obj1.seterName("ahmad");
+        obj1.seterId(102);
+        System.out.println(obj1.gitName());
+        System.out.println(obj1.gitId());*/
+        /*B obj=new B();
+        obj.sum();
+        obj.sub();*/
+        /*String obj =new String();
+        System.out.println(obj);*/
+        /* circle c=new circle();
+        double result=c.area(5);
+        System.out.println(result);*/
+       /* BigInteger A = BigInteger.valueOf(54); biginteger 
+        System.out.println(A);*/
+    }
+    
+}
+/* Abstraction class
+ abstract class  A {
+abstract void  run();
+}
+class B extends A{
+    void run(){
+        System.out.println("this abstrac method ");
+    }
+}*/
+/*
+Encapsolation class
+ class Encp{
+     private int id=100;
+     private String name="wahidullah";
+    public void seterName(String name){
+         this.name=name;
+     }
+     public  void seterId(int id){
+         this.id=id;
+     }
+     String gitName(){
+         return name;
+         
+     }
+      int gitId(){
+         return id;
+         
+     }
+ }
+*/
+/* Relationship
+
+class A{
+    void sum (){
+        int a=10;
+        int b=20;
+        int c=a+b;
+        System.out.println("your sum is ="+c);
+    }       
+}
+
+class B extends A{
+    void sub(){
+        int a=10;
+        int b=20;
+        int c=a-b;
+        System.out.println("your subtrication is ="+c);
+    }         
+}*/
+/*
+class StringExp{
+    
+    char []ch={'w','a','h','d','a','t'};
+}*/
+/*
+Aggregation classas
+class operation{
+    int square(int n){
+        return n*n;
+    }
+}
+class circle{
+    operation op;
+    double pi=3.14;
+    double area(int radius){
+        op=new operation();
+        int rsquare=op.square(radius);
+        return pi*rsquare;
+    }
+    
+}*/
+        /*
+        wrapper class
+  class WrapperExample2{    
+   
+   
+Integer a=new Integer(3);    
+int i=a.intValue();
+int j=a;   
+    
+System.out.println(a+" "+i+" "+j);    
+}   */
+        
+        
+ 
