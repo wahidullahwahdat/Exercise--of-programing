@@ -1,0 +1,101 @@
+
+
+
+package exception;
+
+import java.io.IOError;
+import java.io.IOException;
+
+/**
+ *
+ * @author Wahidullah wahdat
+ */
+public class Exception {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws IOEception {
+        M m=new M();
+        m.m();
+        
+       /* try{
+            int x=100/0;
+        }
+        catch (ArithmeticException e){
+            System.out.println("this is arthemtic Eception");
+        }
+        System.out.println("Rest of program");*/
+      /* 
+       multi Exception
+        try{
+           int x=100/0;
+           int a[]=new int [5];
+            
+        } 
+         catch (ArithmeticException e){
+            System.out.println("task one is complet "+e);
+         }
+       catch (ArrayIndexOutOfBoundsException a){
+           System.out.println("task two is complet"+a);
+       }
+        System.out.println("rest out of the program ");*/
+        
+        /*  try{
+           int x=100/0;
+           
+            
+        } 
+          try{
+          int a[]=new int [5];
+          a[5]=4;
+           
+            
+        }
+    
+          
+      catch(ArithmeticException e ){
+          
+          System.out.println("Arithmetic Eception "+e);
+       }
+          catch(ArrayStoreException a ){
+          
+          System.out.println("Arithmetic Eception "+a);
+    }*/
+        /* finally block
+         try{
+           int x=100/0;
+           
+            
+        } 
+         catch(ArithmeticException e){
+             System.out.println(e);
+             
+         }
+         finally{
+             System.out.println("finally block");
+         }
+         System.out.println("rest of program");*/
+        /*
+        throw1 obj =new throw1();
+        obj.validate(30);
+        System.out.println("Rest of program");*/
+    }
+}
+/*
+throw Exception 
+class throw1{
+    void validate(int age){
+        if(age<18)
+            throw new ArithmeticException("not valid");
+        else
+            System.out.println("welcome to vote");
+    }
+}
+*/
+
+class M {
+    void m ()throws IOException{
+            System.out.println("divice opretion preporem ");
+}
+}
